@@ -33,7 +33,7 @@ github pages默认反映repo的master分支内容，这也是hexo最后生成的
 6. 本地生成web页面并预览，确认无误后则部署至github
    ``` shell
    hexo s -g  # 本地生成web页面并预览
-   hexo d -g  # 本地生成web页面并部署至github
+   hexo d -g  # 本地生成web页面并部署至远端`silaoA.github.io`的master分支
    ```
 7. 切换至hexosrc分支，并追踪以下文件，确认无误后提交并推送至远端`silaoA.github.io`的hexosrc分支
    
@@ -44,7 +44,7 @@ github pages默认反映repo的master分支内容，这也是hexo最后生成的
    + themes/
    
    ``` shell
-   mv <path_elsewhere>/.git ./ #把刚才移出去的.git再放进来
+   mv <path_elsewhere>/.git ./ #把刚才移出去的.git再放进来，覆盖初始化文件
    git remote -v查看远程repo
    git commit -m "hexosrc分支首次提交，追踪源文件、theme和配置"
    git push origin hexosrc:hexosrc
@@ -53,9 +53,9 @@ github pages默认反映repo的master分支内容，这也是hexo最后生成的
 # 在其他机器上工作
 
 重复前一节2~7过程，但注意以下事项：
-+ 本次克隆第2步所指远端`silaoA.github.io`的hexosrc分支
++ 本次克隆第2步所指远端`silaoA.github.io`的**hexosrc分支**；
    ``` shell
-   git clone -b hexosrc git@github.com:silaoA/silaoA.github.io.git
+   git clone -b hexosrc git@github.com:silaoA/silaoA.github.io.git # 克隆hexosrc分支时会自动进入hexosrc分支
    ```
 + 第4步要把repo中**所有内容**暂移别处，不仅仅是.git；
    ``` shell
@@ -66,4 +66,4 @@ github pages默认反映repo的master分支内容，这也是hexo最后生成的
    ``` shell
    mv <path_elsewhere> ./ 
    ``` 
-+ 第7步编写修改博客后，再回到第6步预览，直至确认无误；
++ 第7步编写修改博客后，再回到第6步预览，直至确认无误再提交和推送。
