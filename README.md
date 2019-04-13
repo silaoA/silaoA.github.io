@@ -53,9 +53,11 @@ github pages默认反映repo的master分支内容，这也是hexo最后生成的
 # 在其他机器上工作
 
 重复前一节2~7过程，但注意以下事项：
-+ 本次克隆第2步所指远端`silaoA.github.io`的**hexosrc分支**；
++ 本次克隆第2步所指远端`silaoA.github.io`的**hexosrc分支**，如果在工作机器上已经有克隆过repo，那么只需要拉取远端`silaoA.github.io`的**hexosrc分支**的最新内容即可；
    ``` shell
    git clone -b hexosrc git@github.com:silaoA/silaoA.github.io.git # 克隆hexosrc分支时会自动进入hexosrc分支
+or
+   git checkout hexosrc && git pull origin hexosrc #切换到hexosrc分支再拉取更新
    ```
 + 第4步要把repo中**所有内容**暂移别处，不仅仅是.git；
    ``` shell
