@@ -2,12 +2,12 @@
 title: 使用hexo写博客
 date: 2019-4-10 13:47:27
 categories: 技术
-tags: [hexo, 博客, 技术]
+tags: [hexo, 博客]
 toc: true
 comments: false
 ---
 
-本文共2500余字，预计阅读时间8分钟，本文同步发布于知乎（账号silaoA）和微信公众号平台。
+本文共2500余字，预计阅读时间8分钟，本文同步发布于知乎（账号silaoA）和微信公众号平台（账号伪码人）。
 关注学习了解更多的Cygwin、Linux技术。
 
 尽管office办公软件的功能已足够强悍，但为了便于文章管理，决定搭建博客系统，转用文本编辑器来写文章。本文介绍使用hexo搭建静态博客，并在github部署。
@@ -53,7 +53,7 @@ hexo自带了一款轻量主题landscape，默认配置好，开箱即用。但�
 + [hexo-theme-cafe](https://github.com/giscafer/hexo-theme-cafe)
 
 本人偏爱简洁清爽风格，博客使用了maupassant主题，渲染效果如图：
-![maupassant渲染后效果](/pic/部署后效果.png)
+![maupassant渲染后效果](../pic/部署后效果.png)
 
 # 0x03 部署
 如果仅是为了建博客站，完全可以从头手工编写html+css+javascript，但框架存在的意义就是辅助我们完成这些繁琐的细节工作，专注于创作内容，解放双手。
