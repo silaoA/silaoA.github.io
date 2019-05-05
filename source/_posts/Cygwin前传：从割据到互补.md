@@ -1,6 +1,7 @@
 ---
 title: Cygwin前传：从割据到互补
 date: 2019-02-05 09:35:56
+updated: 2019-05-03 16:19:32
 categories: 技术
 tags: [Cygwin, Linux, Windows]
 toc: true
@@ -33,11 +34,14 @@ RMS大神宣扬的“自由软件”理念赢得了很多追随者，被视作�
 # 0x02 天才小子
 1991年，一个叫Linus Torvalds的芬兰小伙子在鼓捣他老师的Minix系统(UNIX的变种版本，一般仅用在计算机教学中)之余，对其禁止用于商业目的很不满，决定要自己写成一个操作系统并允许在i386的机器上运行。这位天才hacker把自己的成果公布在互联网上，并逐渐吸引了世界范围内众多开发者的加入，使之不断完善，大家伙一商量，就按照Linus Torvalds的名字叫它“Linux”吧。
 ![Linus Torvalds](../pic/Linus.png)
+
 Linux本身只是个操作系统的内核，支持POSIX标准，是一个UNIX-like系统内核，但完完全全是从零开始重写的代码，最重要的，它还是完全开源的自由软件。
 
 这边FSF一看自己的Hurd还不知道什么时候能用呢，那边Linus Torvalds觉着GNU软件不赖，重新造轮子也累，于是众多厂商、机构、社区纷纷把GNU软件和Linux内核(以及其他的一些软件包)整合在一起组成一个完整的操作系统**发行版**，FSF表示没什么意见，只是坚持要求全称应该叫“GNU/Linux”，光叫Linux就把GNU的成果完全忽略掉了。
 
-GNU/Linux的诞生和发展，是一件足以影响计算机行业发展史的大事。
+GNU、Linux都有着开源、自由的特点，理论上任何人都可以自搞一套新的Linux内核以及发行版，为避免重蹈UNIX那样严重分裂、互不兼容的覆辙，[Linux基金会](https://www.linuxfoundation.org)发布了[Linux Standard Base（LSB）](https://refspecs.linuxfoundation.org/lsb.shtml)，制定Linux应用程序与运行环境之间的二进制接口（Application Binary Interface，ABI）规范，被Linux发行版所遵循。
+
+**GNU/Linux的诞生和发展，是一件足以影响计算机行业发展史的大事。**
 
 # 0x03 帝国之踵
 微软帝国靠着Windows发家致富，操作系统市场形成UNIX、GNU/Linux、Windows的主流格局，微软帝国自己声称Windows“部分支持POSIX”。
