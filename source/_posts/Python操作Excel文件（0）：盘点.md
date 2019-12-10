@@ -96,7 +96,7 @@ Excel功能支持方面，`openpyxl`堪称完美，但最大痛点是不支持xl
 * pyexcel Documentation，2018. [http://github.com/pyexcel/pyexcel](http://github.com/pyexcel/pyexcel)
 
 # 更多阅读
-* [-Python项目如何合理组织规避import天坑](2019-08-15-Python项目如何合理组织规避import天坑.html)
+* [Python项目如何合理组织规避import天坑](2019-08-15-Python项目如何合理组织规避import天坑.html)
 * [Cygwin前传：从割据到互补](2019-02-05-Cygwin前传：从割据到互补.html)
 * [Cygwin系列（一）：Cygwin是什么](2019-02-14-Cygwin系列（一）：Cygwin是什么.html)
 * [Cygwin系列（九）：Cygwin学习路线](Cygwin系列（九）：Cygwin学习路线.html)
