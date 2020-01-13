@@ -21,7 +21,7 @@ comments: false
 微软在Windows上不断完善对命令行的支持，官方[开发博客](https://devblogs.microsoft.com/commandline/)中特辟了commandline系列，积极接受用户反馈。此次发布的`WSL2`和`Windows Terminal`颇受关注，也在博客中给出了相关说明。以下称原版`Windows Subsystem for Linux`为WSL1，新版为WSL2。
 
 # 0x00 回顾WSL1
-在前文[Cygwin系列（三）：盘点与Cygwin相似和相反的项目](2019-02-26-Cygwin系列（三）：盘点与Cygwin相似和相反的项目.html)简单介绍过WSL1。WSL1的机制，总体上是在运行时将Linux System Call**翻译**为NT API调用，从而在NT内核基础之上模拟实现Linux内核。微软官方博客[windows-subsystem-for-linux-overview](https://blogs.msdn.microsoft.com/wsl/2016/04/22/windows-subsystem-for-linux-overview/)描述了WSL1的架构组件，可以简化为下图。
+在前文[Cygwin系列（三）：盘点与Cygwin相似和相反的项目](/2019/2019-02-26-Cygwin系列（三）：盘点与Cygwin相似和相反的项目.html)简单介绍过WSL1。WSL1的机制，总体上是在运行时将Linux System Call**翻译**为NT API调用，从而在NT内核基础之上模拟实现Linux内核。微软官方博客[windows-subsystem-for-linux-overview](https://blogs.msdn.microsoft.com/wsl/2016/04/22/windows-subsystem-for-linux-overview/)描述了WSL1的架构组件，可以简化为下图。
 ![WSL1架构示意](../pic/WSL1架构示意.png)
 
 - `LXSS Manager`是普通的win32进程，相当于Linux子系统驱动的代理，还负责管理Linux进程。Linux Instance不是普通的win32进程，微软称为`Pico Process`，是Linux EFL程序的宿主进程，实现了沙盒技术中的一种机制。
@@ -58,7 +58,7 @@ Win10确确实实因WSL而不同，不管微软选择hard模式的黑科技路�
 
 对比各种GNU/Linux桌面发行版惨淡的硬件驱动支持、图形环境与生俱来的不稳定性和低效、二流水准的界面设计，以及不同发行版之间严重的分裂（不一致性），**Win10绝对担当得起最佳Linux发行版的称号。**
 
-诚如一部分评论所言，微软未来在不断优化WSL的同时，可能对NT内核也做出相应调整。想想[Cygwin系列（三）：盘点与Cygwin相似和相反的项目](2019-02-26-Cygwin系列（三）：盘点与Cygwin相似和相反的项目.html)所述毛德操教授发起的[Longene](https://github.com/tsuibin/longene)项目半途废止，统一内核的宏愿在Win10上实现亦未可知。
+诚如一部分评论所言，微软未来在不断优化WSL的同时，可能对NT内核也做出相应调整。想想[Cygwin系列（三）：盘点与Cygwin相似和相反的项目触屏9-02-26-Cygwin系列（三）：盘点与Cygwin相似和相反的项目.html)所述毛德操教授发起的[Longene](https://github.com/tsuibin/longene)项目半途废止，统一内核的宏愿在Win10上实现亦未可知。
 
 # 参考
 - <https://blogs.msdn.microsoft.com/wsl/2016/04/22/windows-subsystem-for-linux-overview/>

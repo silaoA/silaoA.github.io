@@ -10,7 +10,7 @@ comments: false
 本文共3700余字，预计阅读时间12分钟，本文同步发布于知乎（账号silaoA）和微信公众号平台（账号伪码人）。
 关注学习了解更多的Cygwin、Linux技术。
 
-本篇接上篇[Cygwin系列（二）：初窥Cygwin背后](2019-02-21-Cygwin系列（二）：初窥Cygwin背后.html)介绍Cygwin背后实现的思路。
+本篇接上篇[Cygwin系列（二）：初窥Cygwin背后](/2019/2019-02-21-Cygwin系列（二）：初窥Cygwin背后.html)介绍Cygwin背后实现的思路。
 
 <!--more-->
 <!-- [toc] -->
@@ -34,7 +34,7 @@ comments: false
 ## MinGW/MSYS
 MinGW/MSYS经常拿来和Cygwin对比，很多人对此傻傻分不清，但其实二者有根本不同。
 
-MinGW是“Minimalist GNU for Windows”的缩写，即只是一个自由开源的**最小开发工具集**：mingw-gcc编译工具链、mingw软件包管理器（mingw-get），用于开发Windows原生程序。第一版的mingw-gcc是利用早期的Cygwin套件编译而成，这个过程和[Cygwin系列（二）：初窥Cygwin背后](2019-02-21-Cygwin系列（二）：初窥Cygwin背后.html)中Cygwin DLL构建类似，随后mingw-binutils、mingw-make等其他工具链也都逐渐移植成功，MinGW逐渐完全脱离了Cygwin。
+MinGW是“Minimalist GNU for Windows”的缩写，即只是一个自由开源的**最小开发工具集**：mingw-gcc编译工具链、mingw软件包管理器（mingw-get），用于开发Windows原生程序。第一版的mingw-gcc是利用早期的Cygwin套件编译而成，这个过程和[Cygwin系列（二）：初窥Cygwin背后](/2019/2019-02-21-Cygwin系列（二）：初窥Cygwin背后.html)中Cygwin DLL构建类似，随后mingw-binutils、mingw-make等其他工具链也都逐渐移植成功，MinGW逐渐完全脱离了Cygwin。
 ![mingw-gcc利用早期的Cygwin套件编译而成](../pic/mingw-gcc利用早期的Cygwin套件编译而成.png)
 
 MinGW中的程序是不依赖POSIX兼容层的Windows原生程序，MinGW项目并不打算造一个POSIX兼容层，工具链工作的时候也是将程序直接与Windows系统自带的函数库（`user32`、`kernel32`、`gdi32`、`MSVCRT`等DLL）链接，还有编译Windows资源文件的能力。MinGW项目中包含了`w32api-header`包、`w32api-runtime`包便于开发者利用`Win32 API`。

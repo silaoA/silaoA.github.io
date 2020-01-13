@@ -10,7 +10,7 @@ comments: false
 本文共4300余字，预计阅读时间15分钟，本文同步发布于知乎（账号silaoA）和微信公众号平台（账号伪码人）。
 关注学习了解更多的Cygwin、Linux技术。
 
-前一篇文章[Cygwin系列（四）：一步一步搭建Cygwin最小系统](2019-03-06-Cygwin系列（四）：一步一步搭建Cygwin最小系统.html)中已建立了最小系统环境，本篇将初步体验Cygwin的Shell命令行。
+前一篇文章[Cygwin系列（四）：一步一步搭建Cygwin最小系统](/2019/2019-03-06-Cygwin系列（四）：一步一步搭建Cygwin最小系统.html)中已建立了最小系统环境，本篇将初步体验Cygwin的Shell命令行。
 
 <!--more-->
 <!-- [toc] -->

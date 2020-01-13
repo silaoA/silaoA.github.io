@@ -22,7 +22,7 @@ comments: false
 
 **作为非计算机科班人员，嗯，在很长一段时间里，我的认知也是这样。**直到大约10年前，跟随学长学习过程中了解到Ubuntu、Linux，看到了飞一般的命令行操作，不啻打开了另一个世界的大门，颠覆了我的认知。那时经常在图书馆翻看UNIX、Linux系统有关的书籍，嗯，**通常只看目录和第一章 绪论/前言，以求快速获得粗浅了解**。
 
-到此做个小结，**PC上除了常见的微软出品的Windows系统，还有各色GNU/Linux发行版和UNIX系统，后两两种是近亲，Windows在设计理念、操作方式等多方面与其迥异**。Windows假设用户“你什么都不懂，必须按照我搭好的框架去做”，Linux/UNIX假设用户“你清楚地知道每一个动作是干什么，并接受相应后果”。那么，这和要学习的Cygwin有什么关系？为了同时发挥Windows和Linux/UNIX特长，Cygwin在Windows之上提供了UNIX模拟层。参阅前述文章 [Cygwin前传：从割据到互补](2019-02-05-Cygwin前传：从割据到互补.html) 和 [Cygwin系列（一）：Cygwin是什么](2019-02-14-Cygwin系列（一）：Cygwin是什么.html)进一步了解Cygwin与二者关系。
+到此做个小结，**PC上除了常见的微软出品的Windows系统，还有各色GNU/Linux发行版和UNIX系统，后两两种是近亲，Windows在设计理念、操作方式等多方面与其迥异**。Windows假设用户“你什么都不懂，必须按照我搭好的框架去做”，Linux/UNIX假设用户“你清楚地知道每一个动作是干什么，并接受相应后果”。那么，这和要学习的Cygwin有什么关系？为了同时发挥Windows和Linux/UNIX特长，Cygwin在Windows之上提供了UNIX模拟层。参阅前述文章 [Cygwin前传：从割据到互补](/2019/2019-02-05-Cygwin前传：从割据到互补.html) 和 [Cygwin系列（一）：Cygwin是什么](/2019/2019-02-14-Cygwin系列（一）：Cygwin是什么.html)进一步了解Cygwin与二者关系。
 
 ![Windows vs Linux](../pic/Windows、Linux发行版.png)
 
@@ -51,7 +51,7 @@ Windows以图形界面见长，傻瓜式操作，对初学者很友好，几乎�
 
 ![David Wheeler （ 图片来源：https://en.wikipedia.org/wiki/David_Wheeler_(computer_scientist) ）](../pic/David_Wheeler.png)
 
-Cygwin就是为了弥合Windows与UNIX直间的差异而打造的“间接的中间层”，要了解Cygwin上下的层级，请参阅前述文章 [Cygwin系列（一）：Cygwin是什么](2019-02-14-Cygwin系列（一）：Cygwin是什么.html)。
+Cygwin就是为了弥合Windows与UNIX直间的差异而打造的“间接的中间层”，要了解Cygwin上下的层级，请参阅前述文章 [Cygwin系列（一）：Cygwin是什么](/2019/2019-02-14-Cygwin系列（一）：Cygwin是什么.html)。
 
 # 0x01 明确需求与Cygwin局限
 准确来说，用户既不是在用计算机、也不是在用操作系统，而是在**使用某些应用程序或服务**，但操作系统是应用程序的支撑，决定了应用程序具备功能特性的上限。
@@ -65,7 +65,7 @@ Cygwin就是为了弥合Windows与UNIX直间的差异而打造的“间接的中
 - Cygwin依靠DLL模拟UNIX内核，用户能得到**近乎一致**的UNIX/Linux开发体验，不仅如此，程序代码可以同时调用`Win32 API`和`Cygwin API`，但开发工具（`gcc`、`gdb`、`binutils`等）的输出仍然是Windows PE格式，并且依赖于`cygwin1.dll`，如果不需要开发生成的程序在其他系统运行，可以考虑Cygwin；
 - Cygwin只能在源码层级兼容Linux/UNIX API，且做不到100%兼容，有关Linux/UNIX内核特性的函数调用，`cygwin1.dll`未能完全模拟出来，程序代码若涉及到则无法在Cygwin中编译成功，更无法hack Linux内核，程序移植存在一定困难；
 
-综上所述，Cygwin可以满足大部分对Linux Shell的使用需求，对照上述局限，如有符合，可在真实的Linux/UNIX系统及与Cygwin近似的软件项目中选取，参阅[Cygwin系列（三）：盘点与Cygwin相似和相反的项目](2019-02-26-Cygwin系列（三）：盘点与Cygwin相似和相反的项目.html)。
+综上所述，Cygwin可以满足大部分对Linux Shell的使用需求，对照上述局限，如有符合，可在真实的Linux/UNIX系统及与Cygwin近似的软件项目中选取，参阅[Cygwin系列（三）：盘点与Cygwin相似和相反的项目](/2019/2019-02-26-Cygwin系列（三）：盘点与Cygwin相似和相反的项目.html)。
 
 # 0x02 理论vs实践
 **理论指导实践，没有理论支撑，实践就比较盲目，能不能成纯属运气。** 初学者看到教程通常比较喜欢对照教程一顿操作，出了错却找不清原因，不知道如何排错。深究其原因，应是初学者对前提的理论概念理解缺失，急于做完事情而慌不择路，抓到一个教程就赶紧照搬，如果搞不定那就再换别的教程继续照搬。（我认为）正确的姿势是实操暂停、理论先行：先通读教程，理解教程每一步骤的真实意图，如确信已理解那再对照操作，如遇到不理解的概念，应该停下来找其他参考书目学习理论概念做铺垫，如下伪代码所示。
@@ -78,9 +78,9 @@ while(通读教程时不理解理论概念)
 对照教程实操;
 ```
 
-拿学习Cygwin来说，本系列文章的[Cygwin系列（四）：一步一步搭建Cygwin最小系统](2019-03-06-Cygwin系列（四）：一步一步搭建Cygwin最小系统.html)算是一个搭建Cygwin环境的教程，涉及了Windows中未遇到的概念，如「软件包」、「包管理器」、「镜像源」，教程可能对这些概念介绍不细致、不透彻，读者就需要搜索关键字查找网页理解，比较好的工具是[维基百科](https://en.wikipedia.org)、[百度百科](https://baike.baidu.com)，或者找Linux系统相关书籍。
+拿学习Cygwin来说，本系列文章的[Cygwin系列（四）：一步一步搭建Cygwin最小系统](/2019/2019-03-06-Cygwin系列（四）：一步一步搭建Cygwin最小系统.html)算是一个搭建Cygwin环境的教程，涉及了Windows中未遇到的概念，如「软件包」、「包管理器」、「镜像源」，教程可能对这些概念介绍不细致、不透彻，读者就需要搜索关键字查找网页理解，比较好的工具是[维基百科](https://en.wikipedia.org)、[百度百科](https://baike.baidu.com)，或者找Linux系统相关书籍。
 
-在进一步学习如何使用命令行程序时，又会遇到「控制台」、「终端」、「伪终端」、「Shell」、「脚本」、「文件权限」、「路径」、「工作目录」等一系列UNIX/Linux中才遇到的基本概念，本博推出了[Linux Cygwin知识库（一）：一文搞清控制台、终端、shell概念](2019-04-04-Linux Cygwin知识库（一）：一文搞清控制台、终端、shell概念.html) 、[Linux Cygwin知识库（二）：目录、文件及基本操作](2019-05-04-Linux Cygwin知识库（二）：目录、文件及基本操作.html)文章对相关概念做了解释，并会在今后继续增加系列文章。如仍不能理解，需要参阅Linux入门相关书籍，比如对新手很友好的[《鸟哥的Linux私房菜》](http://cn.linux.vbird.org)等。
+在进一步学习如何使用命令行程序时，又会遇到「控制台」、「终端」、「伪终端」、「Shell」、「脚本」、「文件权限」、「路径」、「工作目录」等一系列UNIX/Linux中才遇到的基本概念，本博推出了[Linux Cygwin知识库（一）：一文搞清控制台、终端、shell概念](/2019/2019-04-04-Linux Cygwin知识库（一）：一文搞清控制台、终端、shell概念.html) 、[Linux Cygwin知识库（二）：目录、文件及基本操作](/2019/2019-05-04-Linux Cygwin知识库（二）：目录、文件及基本操作.html)文章对相关概念做了解释，并会在今后继续增加系列文章。如仍不能理解，需要参阅Linux入门相关书籍，比如对新手很友好的[《鸟哥的Linux私房菜》](http://cn.linux.vbird.org)等。
 
 在使用具体命令行程序时，本博系列文章并未花很多篇幅讲述某个命令的用法，只花少量篇幅介绍少数几个关键命令（如`man`、`info`）的常见用法，介绍了命令行程序的基本规则，希望以此做基础，新手能够学会**自主探索任何命令的用法**，就像在Windows中点几下鼠标去摸索图形界面程序的大致功能，这个过程就像是学会怎么查字典，而不是罗列字典的词条。如确实需要像字典内容一样清晰的用法介绍，可以看看[Linux命令大全](https://ipcmen.com)、[explainshell](https://explainshell.com)这样的网页，也可以看[《鸟哥的Linux私房菜》](http://cn.linux.vbird.org)、《linux命令行与shell脚本编程大全》相关章节。
 
@@ -110,12 +110,12 @@ while(通读教程时不理解理论概念)
 * 俞甲子，石凡，潘爱民·程序员的自我修养——链接、装载与库[M]·电子工业出版社，2009·
 
 # 更多阅读
-* [Cygwin前传：从割据到互补](2019-02-05-Cygwin前传：从割据到互补.html)
-* [Cygwin系列（一）：Cygwin是什么](2019-02-14-Cygwin系列（一）：Cygwin是什么.html)
-* [Cygwin系列（三）：盘点与Cygwin相似和相反的项目](2019-02-26-Cygwin系列（三）：盘点与Cygwin相似和相反的项目.html)
-* [Cygwin系列（四）：一步一步搭建Cygwin最小系统](2019-03-06-Cygwin系列（四）：一步一步搭建Cygwin最小系统.html)
-* [Linux Cygwin知识库（一）：一文搞清控制台、终端、shell概念](2019-04-04-Linux Cygwin知识库（一）：一文搞清控制台、终端、shell概念.html) 
-* [Linux Cygwin知识库（二）：目录、文件及基本操作](2019-05-04-Linux Cygwin知识库（二）：目录、文件及基本操作.html)
+* [Cygwin前传：从割据到互补](/2019/2019-02-05-Cygwin前传：从割据到互补.html)
+* [Cygwin系列（一）：Cygwin是什么](/2019/2019-02-14-Cygwin系列（一）：Cygwin是什么.html)
+* [Cygwin系列（三）：盘点与Cygwin相似和相反的项目](/2019/2019-02-26-Cygwin系列（三）：盘点与Cygwin相似和相反的项目.html)
+* [Cygwin系列（四）：一步一步搭建Cygwin最小系统](/2019/2019-03-06-Cygwin系列（四）：一步一步搭建Cygwin最小系统.html)
+* [Linux Cygwin知识库（一）：一文搞清控制台、终端、shell概念](/2019/2019-04-04-Linux Cygwin知识库（一）：一文搞清控制台、终端、shell概念.html) 
+* [Linux Cygwin知识库（二）：目录、文件及基本操作](/2019/2019-05-04-Linux Cygwin知识库（二）：目录、文件及基本操作.html)
 
 
 ---

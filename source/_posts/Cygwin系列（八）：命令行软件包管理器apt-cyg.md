@@ -11,7 +11,7 @@ comments: false
 本文共2500余字，预计阅读时间9分钟，本文同步发布于知乎（账号silaoA）和微信公众号平台（账号伪码人）。
 关注学习了解更多的Cygwin、Linux技术。
 
-前文 [Cygwin系列（四）：一步一步搭建Cygwin最小系统](2019-03-06-Cygwin系列（四）：一步一步搭建Cygwin最小系统.html)和[Cygwin系列（七）：Cygwin软件包管理相关配置](2019-05-12-Cygwin系列（七）：Cygwin软件包管理相关配置.html)着重介绍了`setup`作为包管理器的使用方法、相关配置文件，本文介绍Cygwin中另一个值得尝试的**命令行包管理器**——`apt-cyg`。
+前文 [Cygwin系列（四）：一步一步搭建Cygwin最小系统](/2019/2019-03-06-Cygwin系列（四）：一步一步搭建Cygwin最小系统.html)和[Cygwin系列（七）：Cygwin软件包管理相关配置](/2019/2019-05-12-Cygwin系列（七）：Cygwin软件包管理相关配置.html)着重介绍了`setup`作为包管理器的使用方法、相关配置文件，本文介绍Cygwin中另一个值得尝试的**命令行包管理器**——`apt-cyg`。
 
 <!--more-->
 <!-- [toc] -->
@@ -62,7 +62,7 @@ install apt-cyg /bin
 `apt-cyg download [targets]`仅将软件包下载到本地缓存但不安装，targets参数指定软件包名称，可以同时多个。在进行install操作时，下载动作实质就是download。
 
 ## show
-`apt-cyg show targets`展示软件包基本信息，targets参数指定软件包名称，可以同时多个。`apt-cyg`调用`awk`、`sed`在本地缓存的`setup.ini`文件中查找匹配的软件包的名称、版本、描述、依赖等信息。如[Cygwin系列（七）：Cygwin软件包管理相关配置](2019-05-12-Cygwin系列（七）：Cygwin软件包管理相关配置.html)所举例的glew软件包。
+`apt-cyg show targets`展示软件包基本信息，targets参数指定软件包名称，可以同时多个。`apt-cyg`调用`awk`、`sed`在本地缓存的`setup.ini`文件中查找匹配的软件包的名称、版本、描述、依赖等信息。如[Cygwin系列（七）：Cygwin软件包管理相关配置](/2019/-05-12-Cygwin系列（七）：Cygwin软件包管理相关配置.html)所举例的glew软件包。
 ![setup.ini文件中glew软件包记录](../pic/setup.ini-glew.png)
 
 ## depends/rdepends

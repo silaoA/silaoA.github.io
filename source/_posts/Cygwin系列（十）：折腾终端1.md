@@ -11,7 +11,7 @@ comments: false
 本文共5200余字，预计阅读时间16分钟，本文同步发布于知乎（账号silaoA）和微信公众号平台（账号伪码人）。
 关注学习了解更多的Cygwin、Linux技术。
 
-关于终端的概念，已在 [Linux Cygwin知识库（一）：一文搞清控制台、终端、shell概念](2019-04-04-Linux Cygwin知识库（一）：一文搞清控制台、终端、shell概念.html) 中论述。UNIX/Linux系统对命令行有着天然的支持，Windows对命令行生态却不怎么重视，本着死磕自己娱乐大家的精神，深度扒一扒命令行生态中的重要元素——终端。
+关于终端的概念，已在 [Linux Cygwin知识库（一）：一文搞清控制台、终端、shell概念](/2019/2019-04-04-Linux Cygwin知识库（一）：一文搞清控制台、终端、shell概念.html) 中论述。UNIX/Linux系统对命令行有着天然的支持，Windows对命令行生态却不怎么重视，本着死磕自己娱乐大家的精神，深度扒一扒命令行生态中的重要元素——终端。
 
 <!--more-->
 <!-- [toc] -->
@@ -86,7 +86,7 @@ Mintty的主要功能特性：
 - 灵活的文字复制粘贴操作；
 - 支持Windows XP至Windows10。
 
-Mintty项目官网列出展示上述功能特性的截图，还提供了使用手册，使用手册也是随软件包一起发行。[Cygwin系列（五）：Shell命令行初体验](2019-03-13-Cygwin系列（五）：Shell命令行初体验.html)也简单说了它的工作原理。
+Mintty项目官网列出展示上述功能特性的截图，还提供了使用手册，使用手册也是随软件包一起发行。[Cygwin系列（五）：Shell命令行初体验](/2019/2019-03-13-Cygwin系列（五）：Shell命令行初体验.html)也简单说了它的工作原理。
 
 Mintty的强大之处无需赘述，但不可避免地存在一个问题——不能很好地和Windows命令行程序配合起来，一方面前文陈述的Windows Console组件和pty的不兼容，另一方面是Windows命令行程序使用的字符集与Mintty所支持的存在不兼容。还有我个人觉得不太爽的，**尽管支持通过如`tmux`、`GNU Screen`等多路复用器切换窗口，但Mintty不支持多标签页**。
 
@@ -148,11 +148,11 @@ set "PATH=C:\cygwin64\bin;%PATH%" &
 - [https://github.com/cbucher/console](https://github.com/cbucher/console)
 
 # 更多阅读
-- [Linux Cygwin知识库（一）：一文搞清控制台、终端、shell概念](2019-04-04-Linux Cygwin知识库（一）：一文搞清控制台、终端、shell概念.html)
-- [Cygwin系列（五）：Shell命令行初体验](2019-03-13-Cygwin系列（五）：Shell命令行初体验.html)
-- [Python操作Excel文件（0）：盘点](2019-12-03-Python操作Excel文件（0）：盘点.html)
-- [Cygwin系列（九）：Cygwin学习路线](2019-06-16-Cygwin系列（九）：Cygwin学习路线.html)
-- [微软WSL——Linux桌面版未来之光](2019-05-08-微软WSL——Linux桌面未来之光.html)
+- [Linux Cygwin知识库（一）：一文搞清控制台、终端、shell概念](/2019/2019-04-04-Linux Cygwin知识库（一）：一文搞清控制台、终端、shell概念.html)
+- [Cygwin系列（五）：Shell命令行初体验](/2019/2019-03-13-Cygwin系列（五）：Shell命令行初体验.html)
+- [Python操作Excel文件（0）：盘点](/2019/2019-12-03-Python操作Excel文件（0）：盘点.html)
+- [Cygwin系列（九）：Cygwin学习路线](/2019/2019-06-16-Cygwin系列（九）：Cygwin学习路线.html)
+- [微软WSL——Linux桌面版未来之光](/2019/2019-05-08-微软WSL——Linux桌面未来之光.html)
 - [专栏：伪码人We_Coder](https://zhuanlan.zhihu.com/c_1078678205585551360)
 - [GNU Wget 爬虫？试一试](https://zhuanlan.zhihu.com/p/23748457)
 

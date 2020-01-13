@@ -10,7 +10,7 @@ comments: false
 本文共2800余字，预计阅读时间10分钟，本文同步发布于知乎（账号silaoA）和微信公众号平台（账号伪码人）。
 关注学习了解更多的Cygwin、Linux技术。
 
-前文 [Cygwin系列（四）：一步一步搭建Cygwin最小系统](2019-03-06-Cygwin系列（四）：一步一步搭建Cygwin最小系统.html)中简单介绍了软件包的概念，记录了使用`setup`安装最小系统环境的全过程，本文就着`setup`继续讨论几个软件仓库、软件包相关配置文件，并介绍一个Cygwin包管理相关的实用工具——`cygcheck`。
+前文 [Cygwin系列（四）：一步一步搭建Cygwin最小系统](/2019/2019-03-06-Cygwin系列（四）：一步一步搭建Cygwin最小系统.html)中简单介绍了软件包的概念，记录了使用`setup`安装最小系统环境的全过程，本文就着`setup`继续讨论几个软件仓库、软件包相关配置文件，并介绍一个Cygwin包管理相关的实用工具——`cygcheck`。
 
 <!--more-->
 <!-- [toc] -->
@@ -69,7 +69,7 @@ Cygwin官网页面<https://cygwin.com/mirrors.html>列出了世界各地提供�
 可以看出，**setup.ini文件记录了软件仓库中所有的软件包及其依赖关系**。随着软件源中软件包的增减和版本更新，`setup.ini`文件随之更新，使用`setup`时选定镜像源站点后，`setup`便先更新`setup.ini`文件至本地。
 
 ## setup.rc
-GNU/Linux发行版常用的**软件包管理器**包括`apt`、`yum`、`pacman`、`dnf`等，Cygwin官方提供的**软件包管理器**就是`setup`，[Cygwin系列（四）：一步一步搭建Cygwin最小系统](2019-03-06-Cygwin系列（四）：一步一步搭建Cygwin最小系统.html)中已介绍过用法。
+GNU/Linux发行版常用的**软件包管理器**包括`apt`、`yum`、`pacman`、`dnf`等，Cygwin官方提供的**软件包管理器**就是`setup`，[Cygwin系列（四）：一步一步搭建Cygwin最小系统](/2019/2019-03-06-Cygwin系列（四）：一步一步搭建Cygwin最小系统.html)中已介绍过用法。
 
 `setup`的默认行为受配置文件控制，这个配置文件便是`setup.rc`，位于`/etc/setup/`路径下。`setup.rc`是纯文本文件，存储了若干字段和值，较为关键的有：
 - last-cache字段，记录最近一次选定的软件包保存路径，即镜像站点缓存路径；

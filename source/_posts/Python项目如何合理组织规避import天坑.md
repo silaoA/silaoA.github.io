@@ -128,11 +128,11 @@ projectname/              # 项目目录
 * Python 3.6.7 Documentation - The Python Tutorial.
 
 # 更多阅读
-* [Cygwin前传：从割据到互补](2019-02-05-Cygwin前传：从割据到互补.html)
-* [Cygwin系列（一）：Cygwin是什么](2019-02-14-Cygwin系列（一）：Cygwin是什么.html)
-* [Cygwin系列（九）：Cygwin学习路线](Cygwin系列（九）：Cygwin学习路线.html)
-* [Linux Cygwin知识库（一）：一文搞清控制台、终端、shell概念](2019-04-04-Linux Cygwin知识库（一）：一文搞清控制台、终端、shell概念.html) 
-* [Linux Cygwin知识库（二）：目录、文件及基本操作](2019-05-04-Linux Cygwin知识库（二）：目录、文件及基本操作.html)
+* [Cygwin前传：从割据到互补](/2019/2019-02-05-Cygwin前传：从割据到互补.html)
+* [Cygwin系列（一）：Cygwin是什么](/2019/2019-02-14-Cygwin系列（一）：Cygwin是什么.html)
+* [Cygwin系列（九）：Cygwin学习路线](/2019/2019-06-16-Cygwin系列（九）：Cygwin学习路线.html)
+* [Linux Cygwin知识库（一）：一文搞清控制台、终端、shell概念](/2019/2019-04-04-Linux Cygwin知识库（一）：一文搞清控制台、终端、shell概念.html) 
+* [Linux Cygwin知识库（二）：目录、文件及基本操作](/2019/2019-05-04-Linux Cygwin知识库（二）：目录、文件及基本操作.html)
 
 ---
 **如本文对你有帮助，或内容引起极度舒适，欢迎分享转发或点击下方捐赠按钮打赏** ^_^

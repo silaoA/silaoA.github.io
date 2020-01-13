@@ -19,7 +19,7 @@ comments: false
 在执行某些命令的时候，经常遇到恼人的“未找到命令”报错。为何别人教程里可以正常运行，到自己这里就不行了呢？因为软件环境不同。
 ![未找到命令报错](../pic/未找到命令报错.png)
 
-[Cygwin系列（五）：Shell命令行初体验](2019-03-13-Cygwin系列（五）：Shell命令行初体验.html)中已介绍过Shell中可以执行的指令可分为3类：
+[Cygwin系列（五）：Shell命令行初体验](/2019/2019-03-13-Cygwin系列（五）：Shell命令行初体验.html)中已介绍过Shell中可以执行的指令可分为3类：
 ①**内建(built-in)命令**，仅与Shell自身有关，不同的Shell（如sh、bash、zsh、fish等）支持的内建命令；
 ②**用户定义函数（function）、别名（alias）等**，用户可自定义一些Shell函数，给命名设置别名等；
 ③**外部命令**，额外安装的可执行程序越多，可供执行的外部命令就越多，比如ls就是外部命令。
@@ -32,7 +32,7 @@ comments: false
 ①未安装必要的软件包，命令压根儿不存在；
 ②安装好了必要的软件包，但命令所在的路径不在PATH变量中。
 
-对于①，参照教程 [Cygwin系列（四）：一步一步搭建Cygwin最小系统](2019-03-06-Cygwin系列（四）：一步一步搭建Cygwin最小系统.html)。对于②，可以把下列语句写在配置文件中，比如`~/.bashrc`（如果使用的Shell是Bash）、`~/.zshrc`（如果使用的Shell是zsh）。
+对于①，参照教程 [Cygwin系列（四）：一步一步搭建Cygwin最小系统](/2019/2019-03-06-Cygwin系列（四）：一步一步搭建Cygwin最小系统.html)。对于②，可以把下列语句写在配置文件中，比如`~/.bashrc`（如果使用的Shell是Bash）、`~/.zshrc`（如果使用的Shell是zsh）。
 ```bash
 PATH="<你想添加的路径>:$PATH"
 export PATH
@@ -118,7 +118,7 @@ iconv -f  输入编码  -t  输出编码  输入文件 > 输出文件
 默认情况下，`iconv`输出到`stdout`，上述命令将`stdout`重定向至新文件。
 
 # 0x03  怎么安装软件包
-参照教程 [Cygwin系列（四）：一步一步搭建Cygwin最小系统](2019-03-06-Cygwin系列（四）：一步一步搭建Cygwin最小系统.html)。
+参照教程 [Cygwin系列（四）：一步一步搭建Cygwin最小系统](/2019/2019-03-06-Cygwin系列（四）：一步一步搭建Cygwin最小系统.html)。
 
 # 0x04  选哪个gcc
 `gcc`是源码编译构建时必备的命令，Cygwin的`setup`中能搜素到多个包含`gcc`字样的软件包，那么该选哪个呢？

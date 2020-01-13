@@ -82,12 +82,12 @@ dism /Unmount-wim /mountdir:"c:\win7\mount" /commit
 - [DISM命令行选项](https://docs.microsoft.com/zh-cn/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14)
 
 # 更多阅读
-* [Cygwin前传：从割据到互补](2019-02-05-Cygwin前传：从割据到互补.html)
-* [Cygwin系列（一）：Cygwin是什么](2019-02-14-Cygwin系列（一）：Cygwin是什么.html)
-* [Cygwin系列（九）：Cygwin学习路线](Cygwin系列（九）：Cygwin学习路线.html)
-* [Linux Cygwin知识库（一）：一文搞清控制台、终端、shell概念](2019-04-04-Linux Cygwin知识库（一）：一文搞清控制台、终端、shell概念.html) 
-* [Linux Cygwin知识库（二）：目录、文件及基本操作](2019-05-04-Linux Cygwin知识库（二）：目录、文件及基本操作.html)
-* [Python项目如何合理组织规避import天坑](Python项目如何合理组织规避import天坑.html)
+* [Cygwin前传：从割据到互补](/2019/2019-02-05-Cygwin前传：从割据到互补.html)
+* [Cygwin系列（一）：Cygwin是什么](/2019/2019-02-14-Cygwin系列（一）：Cygwin是什么.html)
+* [Cygwin系列（九）：Cygwin学习路线](/2019/2019-06-16-Cygwin系列（九）：Cygwin学习路线.html)
+* [Linux Cygwin知识库（一）：一文搞清控制台、终端、shell概念](/2019/2019-04-04-Linux Cygwin知识库（一）：一文搞清控制台、终端、shell概念.html) 
+* [Linux Cygwin知识库（二）：目录、文件及基本操作](/2019/2019-05-04-Linux Cygwin知识库（二）：目录、文件及基本操作.html)
+* [Python项目如何合理组织规避import天坑](/2019/2019-08-15-Python项目如何合理组织规避import天坑)
 
 ---
 **如本文对你有帮助，或内容引起极度舒适，欢迎分享转发或点击下方捐赠按钮打赏** ^_^

@@ -442,13 +442,13 @@ In [138]: bk2.save('bk2-openpyxl.xlsx')
 * openpyxl Documentation，2019. [https://openpyxl.readthedocs.io](https://openpyxl.readthedocs.io).
 
 # 更多阅读
-* [Python操作Excel文件（0）：盘点](2019-12-03-Python操作Excel文件（0）：盘点.html)
-* [Python项目如何合理组织规避import天坑](2019-08-15-Python项目如何合理组织规避import天坑.html)
-* [Cygwin前传：从割据到互补](2019-02-05-Cygwin前传：从割据到互补.html)
-* [Cygwin系列（一）：Cygwin是什么](2019-02-14-Cygwin系列（一）：Cygwin是什么.html)
-* [Cygwin系列（九）：Cygwin学习路线](2019-06-16-Cygwin系列（九）：Cygwin学习路线.html)
-* [Linux Cygwin知识库（一）：一文搞清控制台、终端、shell概念](2019-04-04-Linux Cygwin知识库（一）：一文搞清控制台、终端、shell概念.html) 
-* [Linux Cygwin知识库（二）：目录、文件及基本操作](2019-05-04-Linux Cygwin知识库（二）：目录、文件及基本操作.html)
+* [Python操作Excel文件（0）：盘点](/2019/2019-12-03-Python操作Excel文件（0）：盘点.html)
+* [Python项目如何合理组织规避import天坑](/2019/2019-08-15-Python项目如何合理组织规避import天坑.html)
+* [Cygwin前传：从割据到互补](/2019/2019-02-05-Cygwin前传：从割据到互补.html)
+* [Cygwin系列（一）：Cygwin是什么](/2019/2019-02-14-Cygwin系列（一）：Cygwin是什么.html)
+* [Cygwin系列（九）：Cygwin学习路线](/2019/2019-06-16-Cygwin系列（九）：Cygwin学习路线.html)
+* [Linux Cygwin知识库（一）：一文搞清控制台、终端、shell概念](/2019/2019-04-04-Linux Cygwin知识库（一）：一文搞清控制台、终端、shell概念.html) 
+* [Linux Cygwin知识库（二）：目录、文件及基本操作](/2019/2019-05-04-Linux Cygwin知识库（二）：目录、文件及基本操作.html)
 * [专栏：伪码人We_Coder](https://zhuanlan.zhihu.com/c_1078678205585551360)
 
 ---
