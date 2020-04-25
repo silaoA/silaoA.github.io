@@ -77,6 +77,19 @@ pagination_dir: page
 # theme: cafe
 theme: maupassant
 
+#RSS订阅
+# plugin:
+# - hexo-generator-feed
+#Feed Atom
+feed:
+  type: atom  # RSS的类型(atom/rss2)
+  path: atom.xml  # 文件路径,默认是atom.xml/rss2.xml
+  limit: 20 # 展示文章的数量,使用0或则false代表展示全部
+  hub:
+  content:  # 在RSS文件中是否包含内容 ,有3个值 true/false默认不填为false
+  content_limit:  # 指定内容的长度作为摘要,仅仅在上面content设置为false和没有自定义的描述出现
+  content_limit_delim: ' '  # 上面截取描述的分隔符,截取内容是以指定的这个分隔符作为截取结束的标志.在达到规定的内容长度之前最后出现的这个分隔符之前的内容，防止从中间截断
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
