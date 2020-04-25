@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>silaoA的博客</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://silaoa.github.io/"/>
+  <updated>2020-04-25T11:04:06.684Z</updated>
+  <id>https://silaoa.github.io/</id>
+  
+  <author>
+    <name>silaoA</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Cygwin系列（十二）：了解X</title>
+    <link href="https://silaoa.github.io/2020/2020-04-25-Cygwin%E7%B3%BB%E5%88%97%EF%BC%88%E5%8D%81%E4%BA%8C%EF%BC%89%EF%BC%9A%E4%BA%86%E8%A7%A3X.html"/>
+    <id>https://silaoa.github.io/2020/2020-04-25-Cygwin%E7%B3%BB%E5%88%97%EF%BC%88%E5%8D%81%E4%BA%8C%EF%BC%89%EF%BC%9A%E4%BA%86%E8%A7%A3X.html</id>
+    <published>2020-04-25T10:20:21.000Z</published>
+    <updated>2020-04-25T11:04:06.684Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文共4500余字，预计阅读时间14分钟，本文同步发布于知乎（账号silaoA）和微信公众号平台（账号伪码人）。&lt;br&gt;关注学习了解更多的Cygwin、Linux技术。&lt;/p&gt;
+&lt;p&gt;前面连续多篇折腾了终端和命令行，本篇先初步了解X，并敬请期待下一篇：在Windows上折腾X。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://silaoa.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Cygwin" scheme="https://silaoa.github.io/tags/Cygwin/"/>
+    
+      <category term="Linux" scheme="https://silaoa.github.io/tags/Linux/"/>
+    
+      <category term="Windows" scheme="https://silaoa.github.io/tags/Windows/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Cygwin系列（十一）：折腾终端2</title>
+    <link href="https://silaoa.github.io/2020/2020-01-13-Cygwin%E7%B3%BB%E5%88%97%EF%BC%88%E5%8D%81%E4%B8%80%EF%BC%89%EF%BC%9A%E6%8A%98%E8%85%BE%E7%BB%88%E7%AB%AF2.html"/>
+    <id>https://silaoa.github.io/2020/2020-01-13-Cygwin%E7%B3%BB%E5%88%97%EF%BC%88%E5%8D%81%E4%B8%80%EF%BC%89%EF%BC%9A%E6%8A%98%E8%85%BE%E7%BB%88%E7%AB%AF2.html</id>
+    <published>2020-01-13T02:56:23.000Z</published>
+    <updated>2020-01-13T09:59:18.501Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文共2500余字，预计阅读时间8分钟，本文同步发布于知乎（账号silaoA）和微信公众号平台（账号伪码人）。&lt;br&gt;关注学习了解更多的Cygwin、Linux技术。&lt;/p&gt;
+&lt;p&gt;本文承接前篇 &lt;a href=&quot;/2019/2019-12-29-Cygwin系列（十）：折腾终端1.html&quot;&gt;Cygwin系列（十）：折腾终端1&lt;/a&gt;，继续深度扒终端。既然Windows Console与UNIX/Linux上的pty机制完全不同，要让基于不同机制的命令行程序和终端配合起来，颇费周章。又双㕛叒叕祭出David Wheeler大神的著名论断：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;All problems in computer science can be solved by another level of indirection（计算机科学领域的任何问题都可以通过增加一个间接的中间层来解决）。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;也就是说，解决办法无非是在已有条件下继续打造“中间层”，而Cygwin这个中间层试图直接补齐Windows API和UNIX/Linux API之间的差异，显得有点“重量”。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://silaoa.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Cygwin" scheme="https://silaoa.github.io/tags/Cygwin/"/>
+    
+      <category term="Linux" scheme="https://silaoa.github.io/tags/Linux/"/>
+    
+      <category term="Windows" scheme="https://silaoa.github.io/tags/Windows/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Cygwin系列（十）：折腾终端1</title>
+    <link href="https://silaoa.github.io/2019/2019-12-29-Cygwin%E7%B3%BB%E5%88%97%EF%BC%88%E5%8D%81%EF%BC%89%EF%BC%9A%E6%8A%98%E8%85%BE%E7%BB%88%E7%AB%AF1.html"/>
+    <id>https://silaoa.github.io/2019/2019-12-29-Cygwin%E7%B3%BB%E5%88%97%EF%BC%88%E5%8D%81%EF%BC%89%EF%BC%9A%E6%8A%98%E8%85%BE%E7%BB%88%E7%AB%AF1.html</id>
+    <published>2019-12-29T13:40:09.000Z</published>
+    <updated>2020-01-13T06:03:52.845Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文共5200余字，预计阅读时间16分钟，本文同步发布于知乎（账号silaoA）和微信公众号平台（账号伪码人）。&lt;br&gt;关注学习了解更多的Cygwin、Linux技术。&lt;/p&gt;
+&lt;p&gt;关于终端的概念，已在 &lt;a href=&quot;/2019/2019-04-04-Linux Cygwin知识库（一）：一文搞清控制台、终端、shell概念.html&quot;&gt;Linux Cygwin知识库（一）：一文搞清控制台、终端、shell概念&lt;/a&gt; 中论述。UNIX/Linux系统对命令行有着天然的支持，Windows对命令行生态却不怎么重视，本着死磕自己娱乐大家的精神，深度扒一扒命令行生态中的重要元素——终端。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://silaoa.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Cygwin" scheme="https://silaoa.github.io/tags/Cygwin/"/>
+    
+      <category term="Linux" scheme="https://silaoa.github.io/tags/Linux/"/>
+    
+      <category term="Windows" scheme="https://silaoa.github.io/tags/Windows/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python操作Excel文件（3）：优雅干将openpyxl</title>
+    <link href="https://silaoa.github.io/2019/2019-12-20-Python%E6%93%8D%E4%BD%9CExcel%E6%96%87%E4%BB%B6%EF%BC%883%EF%BC%89%EF%BC%9A%E4%BC%98%E9%9B%85%E5%B9%B2%E5%B0%86openpyxl.html"/>
+    <id>https://silaoa.github.io/2019/2019-12-20-Python%E6%93%8D%E4%BD%9CExcel%E6%96%87%E4%BB%B6%EF%BC%883%EF%BC%89%EF%BC%9A%E4%BC%98%E9%9B%85%E5%B9%B2%E5%B0%86openpyxl.html</id>
+    <published>2019-12-20T08:52:13.000Z</published>
+    <updated>2020-01-13T06:06:33.349Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文共4000余字，预计阅读时间16分钟，本文同步发布于知乎专栏和微信公众号平台。&lt;br&gt;关注学习了解更多的Cygwin、Linux、Python技术。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;openpyxl&lt;/code&gt;诞生于Python生态中缺乏原生读写&lt;a href=&quot;http://www.officeopenxml.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Office Open XML&lt;/a&gt;格式文件（也就是xlsx格式）的背景下，由一群志愿者在业余时间开发维护，项目地址 &lt;a href=&quot;http://bitbucket.org/openpyxl/openpyxl&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://bitbucket.org/openpyxl/openpyxl&lt;/a&gt;。相较&lt;code&gt;pyexcel&lt;/code&gt;、&lt;code&gt;xlrd/xlwt/xlutils&lt;/code&gt;，&lt;code&gt;openpyxl&lt;/code&gt;对Excel的功能支持更加丰富，同时在实现上又十分优雅，操作逻辑与直接用Excel软件接近，运行效率也很高，堪称Excel文件操作的优雅干将。&lt;br&gt;本文所用&lt;code&gt;openpyxl&lt;/code&gt;版本为3.0，旧版本可能部分API有所不同。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://silaoa.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Python" scheme="https://silaoa.github.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python操作Excel文件（2）：中规中矩三兄弟xlrd、xlwt和xlutils</title>
+    <link href="https://silaoa.github.io/2019/2019-12-16-Python%E6%93%8D%E4%BD%9CExcel%E6%96%87%E4%BB%B6%EF%BC%882%EF%BC%89%EF%BC%9A%E4%B8%AD%E8%A7%84%E4%B8%AD%E7%9F%A9%E4%B8%89%E5%85%84%E5%BC%9Fxlrd%E3%80%81xlwt%E5%92%8Cxlutils.html"/>
+    <id>https://silaoa.github.io/2019/2019-12-16-Python%E6%93%8D%E4%BD%9CExcel%E6%96%87%E4%BB%B6%EF%BC%882%EF%BC%89%EF%BC%9A%E4%B8%AD%E8%A7%84%E4%B8%AD%E7%9F%A9%E4%B8%89%E5%85%84%E5%BC%9Fxlrd%E3%80%81xlwt%E5%92%8Cxlutils.html</id>
+    <published>2019-12-16T03:02:25.000Z</published>
+    <updated>2020-01-13T06:06:14.424Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文共3000余字，预计阅读时间14分钟，本文同步发布于知乎（账号silaoA）和微信公众号平台（账号伪码人）。&lt;br&gt;关注学习了解更多的Cygwin、Linux、Python等技术。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;xlrd&lt;/code&gt;、&lt;code&gt;xlwt&lt;/code&gt;、&lt;code&gt;xlutils&lt;/code&gt;是&lt;a href=&quot;www.simplistix.co.uk&quot;&gt;Simplistix&lt;/a&gt;公司开发，原网站内容基本都清空了，项目迁移到&lt;a href=&quot;http://www.python-excel.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://www.python-excel.org&lt;/a&gt;，并在GitHub开源，见&lt;a href=&quot;https://github.com/python-excel&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/python-excel&lt;/a&gt;。三兄弟在操作Excel方面表现中规中矩，能够覆盖大部分需求，也是本人最先熟悉的库。三兄弟一起配合才能比较方便地实现Excel文件的读写，&lt;code&gt;xlutils&lt;/code&gt;不是必需，但额外提供了一些简化操作的工具函数。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://silaoa.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Python" scheme="https://silaoa.github.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python操作Excel文件（1）：花式大师pyexcel</title>
+    <link href="https://silaoa.github.io/2019/2019-12-10-Python%E6%93%8D%E4%BD%9CExcel%E6%96%87%E4%BB%B6%EF%BC%881%EF%BC%89%EF%BC%9A%E8%8A%B1%E5%BC%8F%E5%A4%A7%E5%B8%88pyexcel.html"/>
+    <id>https://silaoa.github.io/2019/2019-12-10-Python%E6%93%8D%E4%BD%9CExcel%E6%96%87%E4%BB%B6%EF%BC%881%EF%BC%89%EF%BC%9A%E8%8A%B1%E5%BC%8F%E5%A4%A7%E5%B8%88pyexcel.html</id>
+    <published>2019-12-10T07:37:45.000Z</published>
+    <updated>2020-01-13T06:05:53.534Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;code&gt;pyexcel&lt;/code&gt;是开源的Excel操作库，项目地址为&lt;a href=&quot;https://github.com/pyexcel/pyexcel&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/pyexcel/pyexcel&lt;/a&gt;。它包装了一套API用于读和写文件数据，这一套API接受的参数包括2个关键字集合，一个指定数据来源，另一个指定目的文件，每个集合里都有很多关键字参数控制读写细节。&lt;code&gt;pyexcel&lt;/code&gt;包还实现了工作簿、表单类型，用于访问、操作和保存数据，读写操作十分花式。&lt;/p&gt;
+&lt;p&gt;本文评述&lt;code&gt;pyexcel&lt;/code&gt;库用于读写Excel文件的方法，并做总结。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://silaoa.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Python" scheme="https://silaoa.github.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python操作Excel文件（0）：盘点</title>
+    <link href="https://silaoa.github.io/2019/2019-12-03-Python%E6%93%8D%E4%BD%9CExcel%E6%96%87%E4%BB%B6%EF%BC%880%EF%BC%89%EF%BC%9A%E7%9B%98%E7%82%B9.html"/>
+    <id>https://silaoa.github.io/2019/2019-12-03-Python%E6%93%8D%E4%BD%9CExcel%E6%96%87%E4%BB%B6%EF%BC%880%EF%BC%89%EF%BC%9A%E7%9B%98%E7%82%B9.html</id>
+    <published>2019-12-03T13:45:33.000Z</published>
+    <updated>2020-01-13T06:05:14.065Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;python的一大优势是生态丰富，各种想要的库都有人做好了，省掉造轮子的成本。对于Excel文件操作，也不例外。在Python中操作Excel有2条思路。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;使用&lt;code&gt;pywin32&lt;/code&gt;，内含&lt;code&gt;win32com&lt;/code&gt;等多个包，使用微软独门的&lt;code&gt;COM&lt;/code&gt;接口技术去操控系统中的Excel软件。沿着这条思路，好处是除了Excel软件，可以操控系统中任意支持&lt;code&gt;COM&lt;/code&gt;接口的软件，微软全家桶是必然在列滴，其他就难说了；劣势就是&lt;code&gt;COM&lt;/code&gt;接口技术比较老旧了，仅在Windows平台中使用，而且系统中必须已经安装好Excel软件。&lt;/li&gt;
+&lt;li&gt;使用读写表格文件的库，如&lt;code&gt;xlrd/xlwt/xlutils&lt;/code&gt;、&lt;code&gt;openpyxl&lt;/code&gt;、&lt;code&gt;pyexcel&lt;/code&gt;、&lt;code&gt;XlsxWriter&lt;/code&gt;等，这些库封装了对Excel文件的读写操作的函数。&lt;br&gt;&lt;img src=&quot;https://pic4.zhimg.com/80/v2-bb7e06dd5c94f113a9d6c8a15bb6a0bb_hd.jpg&quot; alt=&quot;在Python中操作Excel文件&quot;&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;本文对第2条思路中常见的库进行简单评述与总结。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://silaoa.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Python" scheme="https://silaoa.github.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>安装Windows7排除USB3驱动缺失问题的经历</title>
+    <link href="https://silaoa.github.io/2019/2019-08-28-%E5%AE%89%E8%A3%85Windows7%E6%8E%92%E9%99%A4USB3%E9%A9%B1%E5%8A%A8%E7%BC%BA%E5%A4%B1%E9%97%AE%E9%A2%98%E7%9A%84%E7%BB%8F%E5%8E%86.html"/>
+    <id>https://silaoa.github.io/2019/2019-08-28-%E5%AE%89%E8%A3%85Windows7%E6%8E%92%E9%99%A4USB3%E9%A9%B1%E5%8A%A8%E7%BC%BA%E5%A4%B1%E9%97%AE%E9%A2%98%E7%9A%84%E7%BB%8F%E5%8E%86.html</id>
+    <published>2019-08-28T12:48:08.000Z</published>
+    <updated>2020-01-13T05:54:15.987Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文共1500余字，预计阅读时间6分钟，本文同步发布于知乎（账号silaoA）和微信公众号平台（账号伪码人）。&lt;br&gt;关注学习了解更多的Cygwin、Linux、Python等技术。&lt;/p&gt;
+&lt;p&gt;给笔记本电脑装系统，本是件稀松平常的事情，时至今日（2019年8月）Windows 7已成为老旧系统，在10多年后的硬件上出现了水土不服。本文记录在Dell笔记本电脑安装Windows 7遇到“缺少所需的 CD/DVD 驱动器设备驱动程序”报错，以及解决过程。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://silaoa.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Windows" scheme="https://silaoa.github.io/tags/Windows/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python项目如何合理组织规避import天坑</title>
+    <link href="https://silaoa.github.io/2019/2019-08-15-Python%E9%A1%B9%E7%9B%AE%E5%A6%82%E4%BD%95%E5%90%88%E7%90%86%E7%BB%84%E7%BB%87%E8%A7%84%E9%81%BFimport%E5%A4%A9%E5%9D%91.html"/>
+    <id>https://silaoa.github.io/2019/2019-08-15-Python%E9%A1%B9%E7%9B%AE%E5%A6%82%E4%BD%95%E5%90%88%E7%90%86%E7%BB%84%E7%BB%87%E8%A7%84%E9%81%BFimport%E5%A4%A9%E5%9D%91.html</id>
+    <published>2019-08-15T01:32:53.000Z</published>
+    <updated>2020-01-13T06:06:46.296Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文共3500余字，预计阅读时间12分钟，本文同步发布于知乎（账号silaoA）和微信公众号平台（账号伪码人）。&lt;br&gt;关注学习了解更多的Cygwin、Linux、Python等技术。&lt;/p&gt;
+&lt;p&gt;Python程序代码中经常需要import语句，从而调用已有的函数、方法等，但在多目录、多文件的项目程序中，容易遇到各种import错误，本文将通过合理化组织规避import带来的错误。&lt;strong&gt;本文描述针对Python3，Python2已过时并将进入无人维护状态，如是初学者建议直接选Python3。&lt;/strong&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://silaoa.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Python" scheme="https://silaoa.github.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Cygwin系列（九）：Cygwin学习路线</title>
+    <link href="https://silaoa.github.io/2019/2019-06-16-Cygwin%E7%B3%BB%E5%88%97%EF%BC%88%E4%B9%9D%EF%BC%89%EF%BC%9ACygwin%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF.html"/>
+    <id>https://silaoa.github.io/2019/2019-06-16-Cygwin%E7%B3%BB%E5%88%97%EF%BC%88%E4%B9%9D%EF%BC%89%EF%BC%9ACygwin%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF.html</id>
+    <published>2019-06-16T14:28:17.000Z</published>
+    <updated>2020-01-13T06:02:12.402Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文共4700余字，预计阅读时间15分钟，本文同步发布于知乎（账号silaoA）和微信公众号平台（账号伪码人）。&lt;br&gt;关注学习了解更多的Cygwin、Linux技术。&lt;/p&gt;
+&lt;p&gt;有读者反馈Cygwin系列文章对初学者门槛较高，需要理解Linux基础概念作为前提。应此需求，撰写本文介绍（我认为）合理的Cygwin学习路线，穿插介绍值得参阅的网站和书目。以下内容或许并不像具体的技术学习路线，更偏向一种学习方法。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://silaoa.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Cygwin" scheme="https://silaoa.github.io/tags/Cygwin/"/>
+    
+      <category term="Linux" scheme="https://silaoa.github.io/tags/Linux/"/>
+    
+      <category term="Windows" scheme="https://silaoa.github.io/tags/Windows/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Cygwin系列（八）：命令行软件包管理器apt-cyg</title>
+    <link href="https://silaoa.github.io/2019/2019-05-25-Cygwin%E7%B3%BB%E5%88%97%EF%BC%88%E5%85%AB%EF%BC%89%EF%BC%9A%E5%91%BD%E4%BB%A4%E8%A1%8C%E8%BD%AF%E4%BB%B6%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8apt-cyg.html"/>
+    <id>https://silaoa.github.io/2019/2019-05-25-Cygwin%E7%B3%BB%E5%88%97%EF%BC%88%E5%85%AB%EF%BC%89%EF%BC%9A%E5%91%BD%E4%BB%A4%E8%A1%8C%E8%BD%AF%E4%BB%B6%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8apt-cyg.html</id>
+    <published>2019-05-24T16:31:20.000Z</published>
+    <updated>2020-01-13T05:56:49.949Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文共2500余字，预计阅读时间9分钟，本文同步发布于知乎（账号silaoA）和微信公众号平台（账号伪码人）。&lt;br&gt;关注学习了解更多的Cygwin、Linux技术。&lt;/p&gt;
+&lt;p&gt;前文 &lt;a href=&quot;/2019/2019-03-06-Cygwin系列（四）：一步一步搭建Cygwin最小系统.html&quot;&gt;Cygwin系列（四）：一步一步搭建Cygwin最小系统&lt;/a&gt;和&lt;a href=&quot;/2019/2019-05-12-Cygwin系列（七）：Cygwin软件包管理相关配置.html&quot;&gt;Cygwin系列（七）：Cygwin软件包管理相关配置&lt;/a&gt;着重介绍了&lt;code&gt;setup&lt;/code&gt;作为包管理器的使用方法、相关配置文件，本文介绍Cygwin中另一个值得尝试的&lt;strong&gt;命令行包管理器&lt;/strong&gt;——&lt;code&gt;apt-cyg&lt;/code&gt;。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://silaoa.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Cygwin" scheme="https://silaoa.github.io/tags/Cygwin/"/>
+    
+      <category term="Linux" scheme="https://silaoa.github.io/tags/Linux/"/>
+    
+      <category term="Windows" scheme="https://silaoa.github.io/tags/Windows/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Cygwin系列（七）：Cygwin软件包管理相关配置</title>
+    <link href="https://silaoa.github.io/2019/2019-05-12-Cygwin%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%83%EF%BC%89%EF%BC%9ACygwin%E8%BD%AF%E4%BB%B6%E5%8C%85%E7%AE%A1%E7%90%86%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE.html"/>
+    <id>https://silaoa.github.io/2019/2019-05-12-Cygwin%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%83%EF%BC%89%EF%BC%9ACygwin%E8%BD%AF%E4%BB%B6%E5%8C%85%E7%AE%A1%E7%90%86%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE.html</id>
+    <published>2019-05-12T02:54:20.000Z</published>
+    <updated>2020-01-13T06:02:59.297Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文共2800余字，预计阅读时间10分钟，本文同步发布于知乎（账号silaoA）和微信公众号平台（账号伪码人）。&lt;br&gt;关注学习了解更多的Cygwin、Linux技术。&lt;/p&gt;
+&lt;p&gt;前文 &lt;a href=&quot;/2019/2019-03-06-Cygwin系列（四）：一步一步搭建Cygwin最小系统.html&quot;&gt;Cygwin系列（四）：一步一步搭建Cygwin最小系统&lt;/a&gt;中简单介绍了软件包的概念，记录了使用&lt;code&gt;setup&lt;/code&gt;安装最小系统环境的全过程，本文就着&lt;code&gt;setup&lt;/code&gt;继续讨论几个软件仓库、软件包相关配置文件，并介绍一个Cygwin包管理相关的实用工具——&lt;code&gt;cygcheck&lt;/code&gt;。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://silaoa.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Cygwin" scheme="https://silaoa.github.io/tags/Cygwin/"/>
+    
+      <category term="Linux" scheme="https://silaoa.github.io/tags/Linux/"/>
+    
+      <category term="Windows" scheme="https://silaoa.github.io/tags/Windows/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>微软WSL——Linux桌面版未来之光</title>
+    <link href="https://silaoa.github.io/2019/2019-05-08-%E5%BE%AE%E8%BD%AFWSL%E2%80%94%E2%80%94Linux%E6%A1%8C%E9%9D%A2%E6%9C%AA%E6%9D%A5%E4%B9%8B%E5%85%89.html"/>
+    <id>https://silaoa.github.io/2019/2019-05-08-%E5%BE%AE%E8%BD%AFWSL%E2%80%94%E2%80%94Linux%E6%A1%8C%E9%9D%A2%E6%9C%AA%E6%9D%A5%E4%B9%8B%E5%85%89.html</id>
+    <published>2019-05-08T02:54:20.000Z</published>
+    <updated>2020-01-13T05:54:48.136Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文共3500余字，预计阅读时间11分钟，本文同步发布于知乎（账号silaoA）和微信公众号平台（账号伪码人）。&lt;br&gt;关注学习了解更多的Cygwin、Linux技术。&lt;/p&gt;
+&lt;p&gt;微软一年一度的&lt;a href=&quot;https://register.build.microsoft.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;build大会&lt;/a&gt;都是Windows开发者的盛会，往往发布酷炫的软硬件产品和新服务。为期3天的build 2019抢在&lt;a href=&quot;https://events.google.com/io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Google IO 2019&lt;/a&gt;之前于2019年5月6日召开，在首日的主题演讲中微软发布了一系列软件和服务，其中就包括新一代WSL——&lt;strong&gt;WSL2&lt;/strong&gt;和微软自家的终端模拟器&lt;strong&gt;Windows Terminal&lt;/strong&gt;。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://silaoa.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Linux" scheme="https://silaoa.github.io/tags/Linux/"/>
+    
+      <category term="Windows" scheme="https://silaoa.github.io/tags/Windows/"/>
+    
+      <category term="WSL" scheme="https://silaoa.github.io/tags/WSL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>IEEE-Spectrum-20190415-为太空而生的充气机器人</title>
+    <link href="https://silaoa.github.io/2019/2019-05-05-IEEE-Spectrum-20190415-%E4%B8%BA%E5%A4%AA%E7%A9%BA%E8%80%8C%E7%94%9F%E7%9A%84%E5%85%85%E6%B0%94%E6%9C%BA%E5%99%A8%E4%BA%BA.html"/>
+    <id>https://silaoa.github.io/2019/2019-05-05-IEEE-Spectrum-20190415-%E4%B8%BA%E5%A4%AA%E7%A9%BA%E8%80%8C%E7%94%9F%E7%9A%84%E5%85%85%E6%B0%94%E6%9C%BA%E5%99%A8%E4%BA%BA.html</id>
+    <published>2019-05-05T02:54:20.000Z</published>
+    <updated>2019-05-06T02:10:38.433Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文译自&lt;a href=&quot;https://spectrum.ieee.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;IEEE Spectrum&lt;/a&gt;，&lt;a href=&quot;https://spectrum.ieee.org/static/journal-watch&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;IEEE Journal Watch&lt;/a&gt;专题追踪工程和计算机科学领域最新成果，如有错误欢迎指正。本文同步发布于知乎（账号silaoA）和微信公众号平台（账号伪码人）。&lt;br&gt;关注学习了解更多的Cygwin、Linux技术和科技动态。&lt;/p&gt;
+&lt;p&gt;原文链接：&lt;a href=&quot;https://spectrum.ieee.org/automaton/robotics/robotics-hardware/inflatable-robots-for-space&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://spectrum.ieee.org/automaton/robotics/robotics-hardware/inflatable-robots-for-space&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;在NASA资助下，研究人员探索充气机器人用于未来太空任务。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://silaoa.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="IEEE" scheme="https://silaoa.github.io/tags/IEEE/"/>
+    
+      <category term="机器人" scheme="https://silaoa.github.io/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
+    
+      <category term="科技" scheme="https://silaoa.github.io/tags/%E7%A7%91%E6%8A%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux Cygwin知识库（二）：目录、文件及基本操作</title>
+    <link href="https://silaoa.github.io/2019/2019-05-04-Linux%20Cygwin%E7%9F%A5%E8%AF%86%E5%BA%93%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9A%E7%9B%AE%E5%BD%95%E3%80%81%E6%96%87%E4%BB%B6%E5%8F%8A%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C.html"/>
+    <id>https://silaoa.github.io/2019/2019-05-04-Linux%20Cygwin%E7%9F%A5%E8%AF%86%E5%BA%93%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9A%E7%9B%AE%E5%BD%95%E3%80%81%E6%96%87%E4%BB%B6%E5%8F%8A%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C.html</id>
+    <published>2019-05-04T08:50:21.000Z</published>
+    <updated>2019-05-04T09:53:22.748Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文共5500余字，预计阅读时间18分钟，本文同步发布于知乎（账号silaoA）和微信公众号平台（账号伪码人）。&lt;br&gt;关注学习了解更多的Cygwin、Linux技术。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;“一切皆文件”&lt;/strong&gt;是UNIX的设计哲学，硬件设备、套接字、目录、程序等都被&lt;strong&gt;抽象&lt;/strong&gt;为“文件”，内核提供一套API给用户应用程序（user application），用于操作上述对象，都被抽象为对文件的读写操作，这样设计最大的好处就是&lt;strong&gt;内核可以保持API的一致性，屏蔽对象细节&lt;/strong&gt;。Linux、Cygwin自然继承了这一点，用户在使用操作系统过程中实际就是文件操作。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://silaoa.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Cygwin" scheme="https://silaoa.github.io/tags/Cygwin/"/>
+    
+      <category term="Linux" scheme="https://silaoa.github.io/tags/Linux/"/>
+    
+      <category term="Windows" scheme="https://silaoa.github.io/tags/Windows/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo+github pages搭建博客站全过程记录</title>
+    <link href="https://silaoa.github.io/2019/2019-04-18-hexo-github-pages%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%AB%99%E5%85%A8%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95.html"/>
+    <id>https://silaoa.github.io/2019/2019-04-18-hexo-github-pages%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%AB%99%E5%85%A8%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95.html</id>
+    <published>2019-04-18T05:47:59.000Z</published>
+    <updated>2019-04-27T08:56:14.822Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文共2800余字，预计阅读时间12分钟，本文同步发布于知乎（账号silaoA）和微信公众号平台（账号伪码人）。&lt;br&gt;关注学习了解更多的Cygwin、Linux技术。&lt;/p&gt;
+&lt;p&gt;理解本文内容需有git、github、hexo基本的预备知识。在网上搜索hexo建立博客站的内容，通常只介绍到在本地预览及推送到github，很少介绍内容版本管理。本文从github建repo开始，记录从零开始到博客站部署和版本管理过程。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://silaoa.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="hexo" scheme="https://silaoa.github.io/tags/hexo/"/>
+    
+      <category term="博客" scheme="https://silaoa.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用hexo写博客</title>
+    <link href="https://silaoa.github.io/2019/2019-04-10-%E4%BD%BF%E7%94%A8hexo%E5%86%99%E5%8D%9A%E5%AE%A2.html"/>
+    <id>https://silaoa.github.io/2019/2019-04-10-%E4%BD%BF%E7%94%A8hexo%E5%86%99%E5%8D%9A%E5%AE%A2.html</id>
+    <published>2019-04-10T05:47:27.000Z</published>
+    <updated>2019-04-27T08:56:07.272Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文共2500余字，预计阅读时间8分钟，本文同步发布于知乎（账号silaoA）和微信公众号平台（账号伪码人）。&lt;br&gt;关注学习了解更多的Cygwin、Linux技术。&lt;/p&gt;
+&lt;p&gt;尽管office办公软件的功能已足够强悍，但为了便于文章管理，决定搭建博客系统，转用文本编辑器来写文章。本文介绍使用hexo搭建静态博客，并在github部署。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://silaoa.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="hexo" scheme="https://silaoa.github.io/tags/hexo/"/>
+    
+      <category term="博客" scheme="https://silaoa.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux Cygwin知识库（一）：一文搞清控制台、终端、shell概念</title>
+    <link href="https://silaoa.github.io/2019/2019-04-04-Linux%20Cygwin%E7%9F%A5%E8%AF%86%E5%BA%93%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E4%B8%80%E6%96%87%E6%90%9E%E6%B8%85%E6%8E%A7%E5%88%B6%E5%8F%B0%E3%80%81%E7%BB%88%E7%AB%AF%E3%80%81shell%E6%A6%82%E5%BF%B5.html"/>
+    <id>https://silaoa.github.io/2019/2019-04-04-Linux%20Cygwin%E7%9F%A5%E8%AF%86%E5%BA%93%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E4%B8%80%E6%96%87%E6%90%9E%E6%B8%85%E6%8E%A7%E5%88%B6%E5%8F%B0%E3%80%81%E7%BB%88%E7%AB%AF%E3%80%81shell%E6%A6%82%E5%BF%B5.html</id>
+    <published>2019-04-03T16:34:21.000Z</published>
+    <updated>2019-06-15T06:28:17.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文共4300余字，预计阅读时间15分钟，本文同步发布于知乎（账号silaoA）和微信公众号平台（账号伪码人）。&lt;br&gt;关注学习了解更多的Cygwin、Linux技术。&lt;/p&gt;
+&lt;p&gt;控制台、终端、shell是命令行界面（CLI）系统中极重要的几个概念，而计算机软件系统中最普遍的思想是分层，这几个事物就在不同层次中，搞清楚概念才能理解软件程序工作在哪一层，本文将带你梳理清楚控制台、终端、shell相关概念及其关系。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://silaoa.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Cygwin" scheme="https://silaoa.github.io/tags/Cygwin/"/>
+    
+      <category term="Linux" scheme="https://silaoa.github.io/tags/Linux/"/>
+    
+      <category term="Windows" scheme="https://silaoa.github.io/tags/Windows/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Cygwin系列（六）：使用Cygwin常见问题及应对</title>
+    <link href="https://silaoa.github.io/2019/2019-03-20-Cygwin%E7%B3%BB%E5%88%97%EF%BC%88%E5%85%AD%EF%BC%89%EF%BC%9A%E4%BD%BF%E7%94%A8Cygwin%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%8F%8A%E5%BA%94%E5%AF%B9.html"/>
+    <id>https://silaoa.github.io/2019/2019-03-20-Cygwin%E7%B3%BB%E5%88%97%EF%BC%88%E5%85%AD%EF%BC%89%EF%BC%9A%E4%BD%BF%E7%94%A8Cygwin%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%8F%8A%E5%BA%94%E5%AF%B9.html</id>
+    <published>2019-03-20T02:54:20.000Z</published>
+    <updated>2020-01-13T06:02:37.520Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文共3700余字，预计阅读时间13分钟，本文同步发布于知乎（账号silaoA）和微信公众号平台（账号伪码人）。&lt;br&gt;关注学习了解更多的Cygwin、Linux技术。&lt;/p&gt;
+&lt;p&gt;在本人使用Cygwin/Linux以及与群友、粉丝交流过程中，有些比较共性的问题，多次解答采坑背后的原因和应对措施，深感必要对这些典型的共性问题专门写文归纳，本着“折腾自己造福大家”的精神，写下此文。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://silaoa.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Cygwin" scheme="https://silaoa.github.io/tags/Cygwin/"/>
+    
+      <category term="Linux" scheme="https://silaoa.github.io/tags/Linux/"/>
+    
+      <category term="Windows" scheme="https://silaoa.github.io/tags/Windows/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Cygwin系列（五）：Shell命令行初体验</title>
+    <link href="https://silaoa.github.io/2019/2019-03-13-Cygwin%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%94%EF%BC%89%EF%BC%9AShell%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%88%9D%E4%BD%93%E9%AA%8C.html"/>
+    <id>https://silaoa.github.io/2019/2019-03-13-Cygwin%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%94%EF%BC%89%EF%BC%9AShell%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%88%9D%E4%BD%93%E9%AA%8C.html</id>
+    <published>2019-03-13T15:33:16.000Z</published>
+    <updated>2020-01-13T06:04:14.934Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文共4300余字，预计阅读时间15分钟，本文同步发布于知乎（账号silaoA）和微信公众号平台（账号伪码人）。&lt;br&gt;关注学习了解更多的Cygwin、Linux技术。&lt;/p&gt;
+&lt;p&gt;前一篇文章&lt;a href=&quot;/2019/2019-03-06-Cygwin系列（四）：一步一步搭建Cygwin最小系统.html&quot;&gt;Cygwin系列（四）：一步一步搭建Cygwin最小系统&lt;/a&gt;中已建立了最小系统环境，本篇将初步体验Cygwin的Shell命令行。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://silaoa.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Cygwin" scheme="https://silaoa.github.io/tags/Cygwin/"/>
+    
+      <category term="Linux" scheme="https://silaoa.github.io/tags/Linux/"/>
+    
+      <category term="Windows" scheme="https://silaoa.github.io/tags/Windows/"/>
+    
+  </entry>
+  
+</feed>
