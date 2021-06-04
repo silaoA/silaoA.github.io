@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://silaoa.github.io/"/>
-  <updated>2020-12-13T08:35:09.049Z</updated>
+  <updated>2021-06-04T14:54:27.040Z</updated>
   <id>https://silaoa.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>WSLg：为WSL增光添彩</title>
+    <link href="https://silaoa.github.io/2021/2021-06-02-WSLg%EF%BC%9A%E4%B8%BAWSL%E5%A2%9E%E5%85%89%E6%B7%BB%E5%BD%A9.html"/>
+    <id>https://silaoa.github.io/2021/2021-06-02-WSLg%EF%BC%9A%E4%B8%BAWSL%E5%A2%9E%E5%85%89%E6%B7%BB%E5%BD%A9.html</id>
+    <published>2021-06-02T04:35:27.000Z</published>
+    <updated>2021-06-04T14:54:27.040Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文共1800余字，预计阅读时间6分钟，本文同步发布于&lt;a href=&quot;https://zhuanlan.zhihu.com/p/302592540&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;知乎专栏&lt;/a&gt;和微信公众号平台。&lt;br&gt;关注学习了解更多的Cygwin、Linux技术。&lt;/p&gt;
+&lt;p&gt;2021年微软的&lt;a href=&quot;https://register.build.microsoft.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;build大会&lt;/a&gt;没有刻意抢&lt;a href=&quot;https://events.google.com/io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Google IO 2021&lt;/a&gt;之前，这一次微软继续带来了Visual Studio、Teams、.NET、VS Code、MAUI等一系列新内容，不忘践行“Microsoft ❤ Developer”、“Microsoft ❤ Linux”，还带来&lt;code&gt;WSLg&lt;/code&gt;。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://silaoa.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Linux" scheme="https://silaoa.github.io/tags/Linux/"/>
+    
+      <category term="Windows" scheme="https://silaoa.github.io/tags/Windows/"/>
+    
+      <category term="WSL" scheme="https://silaoa.github.io/tags/WSL/"/>
+    
+  </entry>
   
   <entry>
     <title>Python自动操作GUI神器PyAutoGUI</title>
@@ -472,32 +498,6 @@
     
       &lt;p&gt;本文共4300余字，预计阅读时间15分钟，本文同步发布于知乎（账号silaoA）和微信公众号平台（账号伪码人）。&lt;br&gt;关注学习了解更多的Cygwin、Linux技术。&lt;/p&gt;
 &lt;p&gt;控制台、终端、shell是命令行界面（CLI）系统中极重要的几个概念，而计算机软件系统中最普遍的思想是分层，这几个事物就在不同层次中，搞清楚概念才能理解软件程序工作在哪一层，本文将带你梳理清楚控制台、终端、shell相关概念及其关系。&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="技术" scheme="https://silaoa.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="Cygwin" scheme="https://silaoa.github.io/tags/Cygwin/"/>
-    
-      <category term="Linux" scheme="https://silaoa.github.io/tags/Linux/"/>
-    
-      <category term="Windows" scheme="https://silaoa.github.io/tags/Windows/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Cygwin系列（六）：使用Cygwin常见问题及应对</title>
-    <link href="https://silaoa.github.io/2019/2019-03-20-Cygwin%E7%B3%BB%E5%88%97%EF%BC%88%E5%85%AD%EF%BC%89%EF%BC%9A%E4%BD%BF%E7%94%A8Cygwin%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%8F%8A%E5%BA%94%E5%AF%B9.html"/>
-    <id>https://silaoa.github.io/2019/2019-03-20-Cygwin%E7%B3%BB%E5%88%97%EF%BC%88%E5%85%AD%EF%BC%89%EF%BC%9A%E4%BD%BF%E7%94%A8Cygwin%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%8F%8A%E5%BA%94%E5%AF%B9.html</id>
-    <published>2019-03-20T02:54:20.000Z</published>
-    <updated>2020-01-13T06:02:37.520Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;本文共3700余字，预计阅读时间13分钟，本文同步发布于知乎（账号silaoA）和微信公众号平台（账号伪码人）。&lt;br&gt;关注学习了解更多的Cygwin、Linux技术。&lt;/p&gt;
-&lt;p&gt;在本人使用Cygwin/Linux以及与群友、粉丝交流过程中，有些比较共性的问题，多次解答采坑背后的原因和应对措施，深感必要对这些典型的共性问题专门写文归纳，本着“折腾自己造福大家”的精神，写下此文。&lt;/p&gt;
     
     </summary>
     
