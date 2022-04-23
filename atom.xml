@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://silaoa.github.io/"/>
-  <updated>2020-12-13T08:35:09.049Z</updated>
+  <updated>2022-04-23T09:53:25.846Z</updated>
   <id>https://silaoa.github.io/</id>
   
   <author>
@@ -15,6 +15,84 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux Cygwin知识库：图形技术栈</title>
+    <link href="https://silaoa.github.io/2022/2022-04-23-Linux%20Cygwin%E7%9F%A5%E8%AF%86%E5%BA%93%EF%BC%9A%E5%9B%BE%E5%BD%A2%E6%8A%80%E6%9C%AF%E6%A0%88.html"/>
+    <id>https://silaoa.github.io/2022/2022-04-23-Linux%20Cygwin%E7%9F%A5%E8%AF%86%E5%BA%93%EF%BC%9A%E5%9B%BE%E5%BD%A2%E6%8A%80%E6%9C%AF%E6%A0%88.html</id>
+    <published>2022-04-23T09:44:55.000Z</published>
+    <updated>2022-04-23T09:53:25.846Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文共约3000字，预计阅读时间10分钟，本文同步发布于&lt;a href=&quot;https://zhuanlan.zhihu.com/p/503627248&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;知乎专栏&lt;/a&gt;和&lt;a href=&quot;/about/index.html&quot;&gt;微信公众号&lt;/a&gt;平台。&lt;br&gt;关注学习了解更多的Cygwin、Linux、Python技术。&lt;br&gt;应评论区要求，本文对&lt;a href=&quot;/2020/2020-04-25-Cygwin系列（十二）：了解X.html&quot;&gt;Cygwin系列（十二）：了解X&lt;/a&gt;做更深入介绍。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://silaoa.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Cygwin" scheme="https://silaoa.github.io/tags/Cygwin/"/>
+    
+      <category term="Linux" scheme="https://silaoa.github.io/tags/Linux/"/>
+    
+      <category term="Windows" scheme="https://silaoa.github.io/tags/Windows/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Cygwin系列（十三）：折腾X</title>
+    <link href="https://silaoa.github.io/2021/2021-10-30-Cygwin%E7%B3%BB%E5%88%97%EF%BC%88%E5%8D%81%E4%B8%89%EF%BC%89%EF%BC%9A%E6%8A%98%E8%85%BEX.html"/>
+    <id>https://silaoa.github.io/2021/2021-10-30-Cygwin%E7%B3%BB%E5%88%97%EF%BC%88%E5%8D%81%E4%B8%89%EF%BC%89%EF%BC%9A%E6%8A%98%E8%85%BEX.html</id>
+    <published>2021-10-30T09:05:13.000Z</published>
+    <updated>2022-04-23T09:40:21.380Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文共2000余字，预计阅读时间8分钟，本文同步发布于&lt;a href=&quot;https://zhuanlan.zhihu.com/p/427637159&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;知乎专栏&lt;/a&gt;和&lt;a href=&quot;/about/index.html&quot;&gt;微信公众号&lt;/a&gt;平台。&lt;br&gt;关注学习了解更多的Cygwin、Linux技术。&lt;/p&gt;
+&lt;p&gt;本篇因各种各样的事情拖了好久。&lt;/p&gt;
+&lt;p&gt;大多数情况下，我们用Linux系统，是为了发挥命令行程序高效的威力，通过终端远程连接过去，一个黑框框里干完所有的活。但是，偶尔也需要运行一下图形界面程序，比如Web浏览器、Oracle安装程序等。而Linux系统主机通常做服务用，不会在图形支持方面堆很高的配置，这时我们可以利用X11的特性，在远端（Linux主机）运行X Client，但让安装了X Server的本地主机（如Windows主机）负责显示程序界面和交互。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://silaoa.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Cygwin" scheme="https://silaoa.github.io/tags/Cygwin/"/>
+    
+      <category term="Linux" scheme="https://silaoa.github.io/tags/Linux/"/>
+    
+      <category term="Windows" scheme="https://silaoa.github.io/tags/Windows/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>WSLg：为WSL增光添彩</title>
+    <link href="https://silaoa.github.io/2021/2021-06-02-WSLg%EF%BC%9A%E4%B8%BAWSL%E5%A2%9E%E5%85%89%E6%B7%BB%E5%BD%A9.html"/>
+    <id>https://silaoa.github.io/2021/2021-06-02-WSLg%EF%BC%9A%E4%B8%BAWSL%E5%A2%9E%E5%85%89%E6%B7%BB%E5%BD%A9.html</id>
+    <published>2021-06-02T04:35:27.000Z</published>
+    <updated>2021-06-02T05:00:33.710Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文共1800余字，预计阅读时间6分钟，本文知乎连接：&lt;a href=&quot;https://zhuanlan.zhihu.com/p/377263437&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;WSLg：为WSL增光添彩&lt;/a&gt;，本文同步发布于&lt;a href=&quot;https://silaoa.github.io&quot;&gt;silaoA的博客&lt;/a&gt;。&lt;br&gt;关注学习了解更多的Cygwin、Linux技术。&lt;/p&gt;
+&lt;p&gt;2021年微软的&lt;a href=&quot;https://register.build.microsoft.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;build大会&lt;/a&gt;没有刻意抢&lt;a href=&quot;https://events.google.com/io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Google IO 2021&lt;/a&gt;之前，这一次微软继续带来了Visual Studio、Teams、.NET、VS Code、MAUI等一系列新内容，不忘践行“Microsoft ❤ Developer”、“Microsoft ❤ Linux”，还带来&lt;code&gt;WSLg&lt;/code&gt;。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://silaoa.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Linux" scheme="https://silaoa.github.io/tags/Linux/"/>
+    
+      <category term="Windows" scheme="https://silaoa.github.io/tags/Windows/"/>
+    
+      <category term="WSL" scheme="https://silaoa.github.io/tags/WSL/"/>
+    
+  </entry>
   
   <entry>
     <title>Python自动操作GUI神器PyAutoGUI</title>
@@ -434,82 +512,6 @@
       <category term="hexo" scheme="https://silaoa.github.io/tags/hexo/"/>
     
       <category term="博客" scheme="https://silaoa.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用hexo写博客</title>
-    <link href="https://silaoa.github.io/2019/2019-04-10-%E4%BD%BF%E7%94%A8hexo%E5%86%99%E5%8D%9A%E5%AE%A2.html"/>
-    <id>https://silaoa.github.io/2019/2019-04-10-%E4%BD%BF%E7%94%A8hexo%E5%86%99%E5%8D%9A%E5%AE%A2.html</id>
-    <published>2019-04-10T05:47:27.000Z</published>
-    <updated>2019-04-27T08:56:07.272Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;本文共2500余字，预计阅读时间8分钟，本文同步发布于知乎（账号silaoA）和微信公众号平台（账号伪码人）。&lt;br&gt;关注学习了解更多的Cygwin、Linux技术。&lt;/p&gt;
-&lt;p&gt;尽管office办公软件的功能已足够强悍，但为了便于文章管理，决定搭建博客系统，转用文本编辑器来写文章。本文介绍使用hexo搭建静态博客，并在github部署。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="技术" scheme="https://silaoa.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="hexo" scheme="https://silaoa.github.io/tags/hexo/"/>
-    
-      <category term="博客" scheme="https://silaoa.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Linux Cygwin知识库（一）：一文搞清控制台、终端、shell概念</title>
-    <link href="https://silaoa.github.io/2019/2019-04-04-Linux%20Cygwin%E7%9F%A5%E8%AF%86%E5%BA%93%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E4%B8%80%E6%96%87%E6%90%9E%E6%B8%85%E6%8E%A7%E5%88%B6%E5%8F%B0%E3%80%81%E7%BB%88%E7%AB%AF%E3%80%81shell%E6%A6%82%E5%BF%B5.html"/>
-    <id>https://silaoa.github.io/2019/2019-04-04-Linux%20Cygwin%E7%9F%A5%E8%AF%86%E5%BA%93%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E4%B8%80%E6%96%87%E6%90%9E%E6%B8%85%E6%8E%A7%E5%88%B6%E5%8F%B0%E3%80%81%E7%BB%88%E7%AB%AF%E3%80%81shell%E6%A6%82%E5%BF%B5.html</id>
-    <published>2019-04-03T16:34:21.000Z</published>
-    <updated>2019-06-15T06:28:17.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;本文共4300余字，预计阅读时间15分钟，本文同步发布于知乎（账号silaoA）和微信公众号平台（账号伪码人）。&lt;br&gt;关注学习了解更多的Cygwin、Linux技术。&lt;/p&gt;
-&lt;p&gt;控制台、终端、shell是命令行界面（CLI）系统中极重要的几个概念，而计算机软件系统中最普遍的思想是分层，这几个事物就在不同层次中，搞清楚概念才能理解软件程序工作在哪一层，本文将带你梳理清楚控制台、终端、shell相关概念及其关系。&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="技术" scheme="https://silaoa.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="Cygwin" scheme="https://silaoa.github.io/tags/Cygwin/"/>
-    
-      <category term="Linux" scheme="https://silaoa.github.io/tags/Linux/"/>
-    
-      <category term="Windows" scheme="https://silaoa.github.io/tags/Windows/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Cygwin系列（六）：使用Cygwin常见问题及应对</title>
-    <link href="https://silaoa.github.io/2019/2019-03-20-Cygwin%E7%B3%BB%E5%88%97%EF%BC%88%E5%85%AD%EF%BC%89%EF%BC%9A%E4%BD%BF%E7%94%A8Cygwin%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%8F%8A%E5%BA%94%E5%AF%B9.html"/>
-    <id>https://silaoa.github.io/2019/2019-03-20-Cygwin%E7%B3%BB%E5%88%97%EF%BC%88%E5%85%AD%EF%BC%89%EF%BC%9A%E4%BD%BF%E7%94%A8Cygwin%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%8F%8A%E5%BA%94%E5%AF%B9.html</id>
-    <published>2019-03-20T02:54:20.000Z</published>
-    <updated>2020-01-13T06:02:37.520Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;本文共3700余字，预计阅读时间13分钟，本文同步发布于知乎（账号silaoA）和微信公众号平台（账号伪码人）。&lt;br&gt;关注学习了解更多的Cygwin、Linux技术。&lt;/p&gt;
-&lt;p&gt;在本人使用Cygwin/Linux以及与群友、粉丝交流过程中，有些比较共性的问题，多次解答采坑背后的原因和应对措施，深感必要对这些典型的共性问题专门写文归纳，本着“折腾自己造福大家”的精神，写下此文。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="技术" scheme="https://silaoa.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="Cygwin" scheme="https://silaoa.github.io/tags/Cygwin/"/>
-    
-      <category term="Linux" scheme="https://silaoa.github.io/tags/Linux/"/>
-    
-      <category term="Windows" scheme="https://silaoa.github.io/tags/Windows/"/>
     
   </entry>
   
