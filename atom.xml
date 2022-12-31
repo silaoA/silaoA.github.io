@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://silaoa.github.io/"/>
-  <updated>2022-04-23T09:53:25.846Z</updated>
+  <updated>2022-12-31T08:43:31.078Z</updated>
   <id>https://silaoa.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python打印彩色字符</title>
+    <link href="https://silaoa.github.io/2022/2022-12-31-Python%E6%89%93%E5%8D%B0%E5%BD%A9%E8%89%B2%E5%AD%97%E7%AC%A6.html"/>
+    <id>https://silaoa.github.io/2022/2022-12-31-Python%E6%89%93%E5%8D%B0%E5%BD%A9%E8%89%B2%E5%AD%97%E7%AC%A6.html</id>
+    <published>2022-12-31T08:24:50.000Z</published>
+    <updated>2022-12-31T08:43:31.078Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;见惯了在黑色终端内输出白色字符，为使输出更有辨识度，我们编写的Python程序如何在终端打印出彩色字符呢？特别是出错的时候，红色字符让用户一下就关注到错误消息，像&lt;code&gt;pip&lt;/code&gt;在下载安装库的时候，出错都是大段的红色字符。搜索这个问题的时候，不少教程都是介绍Linux终端打印彩色字符，提及Windows终端如何打印彩色字符的较少，这将是本文重点。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://silaoa.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Python" scheme="https://silaoa.github.io/tags/Python/"/>
+    
+  </entry>
   
   <entry>
     <title>Linux Cygwin知识库：图形技术栈</title>
@@ -488,30 +509,6 @@
       <category term="Linux" scheme="https://silaoa.github.io/tags/Linux/"/>
     
       <category term="Windows" scheme="https://silaoa.github.io/tags/Windows/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hexo+github pages搭建博客站全过程记录</title>
-    <link href="https://silaoa.github.io/2019/2019-04-18-hexo-github-pages%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%AB%99%E5%85%A8%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95.html"/>
-    <id>https://silaoa.github.io/2019/2019-04-18-hexo-github-pages%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%AB%99%E5%85%A8%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95.html</id>
-    <published>2019-04-18T05:47:59.000Z</published>
-    <updated>2019-04-27T08:56:14.822Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;本文共2800余字，预计阅读时间12分钟，本文同步发布于知乎（账号silaoA）和微信公众号平台（账号伪码人）。&lt;br&gt;关注学习了解更多的Cygwin、Linux技术。&lt;/p&gt;
-&lt;p&gt;理解本文内容需有git、github、hexo基本的预备知识。在网上搜索hexo建立博客站的内容，通常只介绍到在本地预览及推送到github，很少介绍内容版本管理。本文从github建repo开始，记录从零开始到博客站部署和版本管理过程。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="技术" scheme="https://silaoa.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="hexo" scheme="https://silaoa.github.io/tags/hexo/"/>
-    
-      <category term="博客" scheme="https://silaoa.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
