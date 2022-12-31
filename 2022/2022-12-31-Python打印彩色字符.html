@@ -50,7 +50,7 @@
 <p>综上，终端打印彩色字符，总体来说包括颜色样式与文本分离和混合两大类，但个人认为分离更好：</p>
 <ul>
 <li><strong>可读性更强</strong>，颜色样式与文本混合，无论是转义序列还是标签，可读性都较差；</li>
-<li><strong>改造工作量小</strong>，对现有代码中的<code>print</code>函数，在<code>print</code>前面加上<code>c</code>，再在参数列表前头加上前景、背景色即可，比转义序列的；</li>
+<li><strong>改造工作量小</strong>，对现有代码中的<code>print</code>函数，在<code>print</code>前面加上<code>c</code>，再在参数列表前头加上前景、背景色即可；</li>
 <li><strong>不依赖第三库</strong>，使用标准库<code>ctypes</code>即可，方便他人使用和打包；</li>
 <li>在有重定向、管道输出的场合，比如输出到日志文件，<strong>不会输出颜色样式的转义序列或者标签，不打乱上层的函数调用</strong>。<br>其中，最后两点个人认为尤需重视。</li>
 </ul>
